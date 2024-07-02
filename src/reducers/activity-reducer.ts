@@ -24,4 +24,5 @@ export const activityReducer = (
             activities: [...state.activities, action.payload.newActivity ]
         }
     }
+    return state;
 }
