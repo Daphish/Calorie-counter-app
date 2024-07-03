@@ -17,7 +17,7 @@ const initialState : Activity = {
 }
 
 export default function Form({dispatch, state} : FormProps) {
-  
+
   const [activity, setActivity] = useState<Activity>(initialState);
 
   useEffect(() => {
@@ -87,7 +87,7 @@ export default function Form({dispatch, state} : FormProps) {
           id="name"
           type="text"
           className="border border-slate-300 p-2 rounded-lg"
-          placeholder="Ej. Comida, Jugo de Naranja, ENsalada, Ejercicio, Pesas, Bicicleta"
+          placeholder="Ej. Comida, Jugo de Naranja, Ensalada, Ejercicio, Pesas, Bicicleta"
           value={activity.name}
           onChange={handleChange}
         />
